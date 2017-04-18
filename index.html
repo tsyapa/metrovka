@@ -4,7 +4,107 @@
       <meta charset="utf-8">
       <title>Phototime</title>
       <link href="style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <meta name="viewport" content="width=device-width">
     </head>
     <body>
-        
+        <header class="header green-background">
+            <nav class="wrapper">
+                <ul class="nav">
+                    <li class="nav__item left-padding">
+                        <a class="nav__link" href="#"><img src="img/Combined%20Shape.png"></a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link label-white" href="#">Аренда</a>
+                    </li>
+                    <li class="nav__item hidden">
+                        <a class="nav__link label-white" href="#">Продажа</a>
+                    </li>
+                    <li class="nav__item hidden">
+                        <a class="nav__link label-white" href="#">Посуточно</a>
+                    </li>
+                    <li class="nav__item hidden">
+                        <a class="nav__link label-white" href="#"><img class="settings-img" src="img/Settings.png"> Еще</a>
+                    </li>
+                    <li class="advert-button hidden">
+                        <a class="nav__link label-white" href="#"><img class="plus-img" src="img/Plus.png">Разместить объявление</a>
+                    </li>
+                    <li class="signin hidden">
+                        <a class="nav__link label-white" href="#">Войти</a>
+                    </li>
+                    <li class="menu">
+                        <a class="nav__link" href="#"><img src="img/menu.png"></a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section class="search-by-city green-background">
+            <div class="wrapper">
+                <h1 class="h1 label-white">Поиск недвижимости в Украине</h1>
+                <div class="content">
+                    <p class="label-white label1">Выберите город</p>
+                    <select class="select label-black">
+                        <option selected>Киев</option>
+                        <option>Львов</option>
+                        <option>Одесса</option>
+                    </select>
+                </div>    
+                <div class="content">
+                    <p class="label-white label1">Кол-во комнат</p>
+                    <form class="room-form">
+                        <span class="checkbox">
+                            <input class="checkbox__flag" id="check1" type="checkbox" name="check" checked>
+                            <label for="check1" class="checkbox-circle label-white">1</label>
+                        </span>   
+                        <span class="checkbox">
+                            <input class="checkbox__flag" id="check2" type="checkbox" name="check" checked>
+                            <label for="check2" class="checkbox-circle label-white">2</label>
+                        </span> 
+                        <span class="checkbox">
+                            <input class="checkbox__flag" id="check3" type="checkbox" name="check">
+                            <label for="check3" class="checkbox-circle label-white">3</label>
+                        </span> 
+                        <span class="checkbox">
+                            <input class="checkbox__flag" id="check4" type="checkbox" name="check">
+                            <label for="check4" class="checkbox-circle label-white">4</label>
+                        </span> 
+                        <span class="checkbox">
+                            <input class="checkbox__flag" id="check5" type="checkbox" name="check">
+                            <label for="check5" class="checkbox-circle label-white two-digit">5+</label>
+                        </span> 
+                    </form>
+                </div>  
+                <div class="content">
+                    <button class="search-room-button label-white">Перейти к поиску</button>
+                </div>    
+            </div>
+        </section>
+        <section class="search-by-metro">
+            <div class="wrapper">
+                <img class="img img-metro" src="img/metro.jpg">
+                <div class="content">
+                    <h2 class="h2 label-black">Недвижимость возле метро</h2>
+                    <form class="estate-form">
+                        <span class="radio">
+                            <input class="radio__flag" id="appartment" type="radio" name="radio" checked>
+                            <label for="appartment" class="label-black radio-label">Квартиры</label>
+                        </span>   
+                        <span class="radio">
+                            <input class="radio__flag" id="house" type="radio" name="radio">
+                            <label for="house" class="label-black radio-label">Дома</label>
+                        </span> 
+                        <span class="radio">
+                            <input class="radio__flag" id="office" type="radio" name="radio">
+                            <label for="office" class="label-black radio-label">Офисы</label>
+                        </span> 
+                    </form>
+                    <select class="select label-black metro-red">
+                        <option selected><img class="metro-red" src="img/Rectangle%20430.png">Политехнический институт</option>
+                        <option>Вокзальная</option>
+                        <option>Университет</option>
+                    </select>
+                    <button class="search-room-metro-button green-background label-white">Показать результаты поиска</button>
+                </div>    
+            </div>
+        </section>
     </body>
